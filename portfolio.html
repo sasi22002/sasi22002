@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sasikumar's Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans:400,600">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: "Roboto", sans-serif;
+            background: #f4f4f4;
+            color: #333;
+        }
+        .header {
+            background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fG1hYiUyMHdvcmtpbmclMjBvbiUyMGNvbXB1dGVyfGVufDB8fHx8MTYyMzUyMTMzNA&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center/cover;
+            height: 60vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 3.5em; /* Adjusted size for more impact */
+            margin: 0;
+            font-weight: 700;
+        }
+        .header p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .section-title {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        .skills {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+        .skill {
+            width: 22%;
+            background: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .skill h3 {
+            margin-bottom: 15px;
+            font-size: 1.2em; /* Increased size for emphasis */
+            color: #000DFF;
+        }
+        .projects {
+            display: flex;
+            overflow-x: auto;
+            margin-bottom: 50px;
+            gap: 15px;
+        }
+        .project {
+            min-width: 300px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+            position: relative;
+        }
+        .project img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .project-content {
+            padding: 20px;
+        }
+        .project-content h3 {
+            margin: 15px 0;
+            font-size: 1.3em; /* Increased size for project titles */
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+        .footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .header .contact-icons a:hover {
+            text-decoration: underline;
+        }
+        
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>Sasikumar S.</h1> <!-- Slight adjustment for a more professional appearance -->
+    <p>Software Developer | Python & Backend Development Specialist</p>
+    <div class="contact-icons">
+        <a href="mailto:ssasikumar4800@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="tel:+919943045194" title="Call"><i class="fas fa-phone"></i></a> <!-- Add your mobile number here -->
+        <a href="https://linkedin.com/in/sasikumar-s-5ba4341a2/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
+</div>
+    
+    
+<div class="container">
+    <div class="section">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills">
+            <div class="skill">
+                <h3>Programming Languages</h3>
+                <p>Proficient in Python with additional knowledge of PHP and HTML.</p>
+            </div>
+            <div class="skill">
+                <h3>Web Development Frameworks</h3>
+                <p>Experienced in Django, Flask, and Quart for web development.</p>
+            </div>
+            <div class="skill">
+                <h3>Cloud Services</h3>
+                <p>Experienced with AWS services and Docker for deployment.</p>
+            </div>
+            <div class="skill">
+                <h3>Database Management</h3>
+                <p>Skilled in MySQL, PostgreSQL, and MongoDB.</p>
+            </div>
+            <div class="skill">
+                <h3>Task Management & Automation</h3>
+                <p>Experienced with CRON jobs and Apache Airflow for task scheduling.</p>
+            </div>
+            <div class="skill">
+                <h3>API Documentation</h3>
+                <p>Proficient in using Swagger for API documentation.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="https://img.freepik.com/free-vector/kids-using-tablet-with-education-icons_1308-77298.jpg?w=740&t=st=1724855021~exp=1724855621~hmac=4377b274897542d35ffd42fa6a3b340c8f314678d973fe83bba523f9cb1d79f2" alt="I2_Global">
+                <div class="project-content">
+                    <h3>I2_Global</h3>
+                    <p>Developed a classifieds web application featuring dynamic dashboards and live classes.</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="https://www.shutterstock.com/shutterstock/photos/2036186264/display_1500/stock-photo-happy-latin-hispanic-kid-girl-school-student-using-smartphone-in-classroom-preteen-child-holding-2036186264.jpg" alt="SpeakApp">
+                <div class="project-content">
+                    <h3>SpeakApp</h3>
+                    <p>Created a language learning platform with interactive sessions and integrated payment systems.</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="https://images.pexels.com/photos/228963/pexels-photo-228963.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="JOIN-the-GAME">
+                <div class="project-content">
+                    <h3>JOIN-the-GAME</h3>
+                    <p>Supported the development of an app allowing users to create and join games with notifications for nearby players.</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="https://simicart.com/wp-content/uploads/best-wholesale-vendors-10.png" alt="URANUS">
+                <div class="project-content">
+                    <h3>URANUS</h3>
+                    <p>Developed a platform for managing the sale of used cooking oil from restaurants to small shops.</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="https://static.vecteezy.com/system/resources/previews/036/513/778/non_2x/repair-or-home-improvement-tools-and-a-house-model-on-a-plain-background-photo.jpg" alt="PRICE-IT">
+                <div class="project-content">
+                    <h3>PRICE-IT</h3>
+                    <p>Built a customer service platform for job posting, bidding, and real-time interactions.</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="https://framerusercontent.com/assets/ImhFLzvd7NSUcRqPrvViI1qzuE.png" alt="Medzell">
+                <div class="project-content">
+                    <h3>Medzell</h3>
+                    <p>Enhanced a platform for global sales of medical devices with Distributors and Leads.</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGeXe_bPCoWRxE0zd2IBgv1V_QksW6M6vSUg&s" alt="C4GT">
+                <div class="project-content">
+                    <h3>C4GT</h3>
+                    <p>Developed a platform for managing GitHub issue contributors' points and activities.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>Sasikumar S. | Software Developer | Coimbatore, India</p>
+    <a href="https://www.instagram.com/sasikumar_sellappan?igsh=b3UzcGFmaTNxY3Zo"><i class="fab fa-instagram"></i></a>
+    <a href="https://github.com/sasi22002"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/sasikumar-s-5ba4341a2/"><i class="fab fa-linkedin"></i></a>
+    <!-- <a><i class="fas fa-phone">+91 994304194</i></a> -->
+    <p> Phone : +91 9943045194</p>
+    <p>&copy; 2024 Sasikumar S. | All rights reserved</p>
+
+</div>
+
+</body>
+</html>
